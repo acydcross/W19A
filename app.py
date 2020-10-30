@@ -3,21 +3,21 @@ import subtraction
 import multiplication
 import division
 
-print("Select a function")
-print("1. Add")
-print("2. Minus")
-print("3. Times")
-print("4. Divide")
+print("Welcome to the simple calculator, please select from the following options:")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
 
-userSelect = input("Select 1 or 2 or 3 or 4 : ")
+userSelect = input("Please enter your selection: ")
 if userSelect in ('1', '2', '3', '4' ):
-    number1 = int(input("Enter first number: "))
-    number2 = int(input("Enter second number: "))
+    number1 = int(input("Please enter your first number: "))
+    number2 = int(input("Please enter your second number: "))
     if userSelect == '1':
-        print(number1 + number2)
+        print("Your result: ", (number1 + number2))
     elif userSelect == '2':
-        print(number1 - number2)
+        print("Your result: ", (number1 - number2))
     elif userSelect == '3':
-        print(number1 * number2)
+        print("Your result: ", (number1 * number2))
     elif userSelect == '4':
-        print(number1 / number2)
+        print("Your result: ", (number1 / number2))
